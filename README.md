@@ -33,7 +33,7 @@ BeImmortal 是一个基于区块链技术的去中心化遗嘱管理平台，允
 
 1. 克隆仓库
 ```bash
-git clone https://github.com/yourusername/BeImmortal.git
+git clone https://github.com/seimodev/BeImmortal.git
 cd BeImmortal
 ```
 
