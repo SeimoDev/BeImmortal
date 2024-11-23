@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .card-title {
+    @apply text-2xl font-bold mb-4;
+  }
+  .input-field {
+    @apply w-full p-2 border rounded-lg mb-4;
+  }
+  .btn-primary {
+    @apply px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors;
+  }
+  .btn-secondary {
+    @apply px-4 py-2 bg-gray-600 text-white rounded-lg hover:bg-gray-700 transition-colors;
+  }
+  .floating-btn {
+    @apply fixed bottom-4 right-4 p-4 rounded-full shadow-lg;
+  }
+}

@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', system-ui, sans-serif;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply btn bg-primary-500 hover:bg-primary-600 text-white border-none;
+  }
+  
+  .btn-secondary {
+    @apply btn bg-secondary-500 hover:bg-secondary-600 text-white border-none;
+  }
+  
+  .btn-outline {
+    @apply btn border-2 border-primary-500 text-primary-500 hover:bg-primary-500 hover:text-white;
+  }
+  
+  .card {
+    @apply rounded-lg shadow-md bg-white p-6;
+  }
+  
+  .input-primary {
+    @apply input input-bordered border-2 focus:border-primary-500 focus:ring-2 focus:ring-primary-200;
+  }
+  
+  .link {
+    @apply text-primary-500 hover:text-primary-600 underline-offset-2 hover:underline;
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: theme('colors.neutral.100');
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: theme('colors.primary.300');
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: theme('colors.primary.400');
+}
+
+/* Transitions */
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.3s ease;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
